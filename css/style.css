@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23ffffff' fill-opacity='0.18' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+/*header*/
+header{
+    background-image: url(../img/f3.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+
+}
+.lista{
+    display:inline-block;
+    justify-content: space-between;
+     align-items: center;
+     color: rgb(0, 0, 0);
+     margin: 5px;
+     background-color: #ffffff;
+     border-radius: 10px;
+}
+.navbar{
+    padding: 10px;
+    border-bottom: #ffffff;
+}
+.navbar ul li a{
+    text-decoration: none;
+}
+#imgheader{
+    width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+ 
+    border-bottom: solid;
+    border-left:solid;
+    border-color: #fff;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    width: 20px;
+
+}
+
+/*inicio*/
+.container{
+    background-color: #000000;
+    color: #fff;
+    margin: 20px 0 20px 15%;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+}
+.container h2{
+    padding: 10px;
+    font-size: 30px;
+    transition: .3s;
+}
+.container h2:hover{
+    font-size: 40px;
+}
+.container p{
+    padding: 40px;
+}
+.container img{
+    padding: 20px;
+    width: 500px;
+    border-radius: 50px;
+    transition: .3s;
+}
+
+.container img:hover{
+    width: 600px;
+}
+h2{
+    text-align: center;
+ 
+}
+#parrafo{
+    padding: 30px;
+}
+
+.iconos{
+  justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    color: aliceblue;
+    align-items: center;
+    flex-direction: row;
+}
+
+/*contactenos*/
+#formulario{
+   text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    width: 40%;
+    
+    border: solid;
+    border-radius: 10px;
+    border-color: azure;
+    padding: 30px;
+    margin: 10px 15% 15px 30%;
+    
+
+}
+.inputs{
+    width: 80%;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+}
+#select{
+    width: 30%;
+    border-radius: 10px;
+    height: 20px;
+    margin: 10px;
+}
+
+#enviar{
+    width:  30%;
+    margin: 10px;
+    border-radius: 10px;
+   color: rgb(red, green, blue);
+}
+
+
+
+/*cartas categorias*/
+.cartasgiratorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+}
+.cards-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.cards-2 .card{
+    margin-left: 20%;
+}
+.card{
+    position: relative;
+     width: 250px;
+     height: 300px;
+     margin: 20px;
+  
+  
+  }
+  .card .face{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 3s;
+    
+  }
+  
+  .card .front{
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 5px 10px #000;
+  }
+  
+  .card .front .img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .card .front h3{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      background-color: rgb(0, 0, 0,.4x);
+      text-align: center;
+  }
+  
+  .card .back{
+  
+      transform: perspective(600px) rotateY(180deg);
+      background-color: #929191;
+      padding: 15px;
+      color: aliceblue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px #000;
+      
+      }
+      .card .back .link{
+          border-top: solid 1px #ffffff;
+          height: 50px;
+          line-height: 50px;
+  
+      }
+  
+      .card .back .link a{
+          color: white;
+  
+      }
+  
+      .card .back h3{
+          font-size: 30px;
+          margin-top: 20px;
+          letter-spacing: 2px;
+  
+      }
+  
+      .card .back p{
+  
+          letter-spacing: 1px;
+      }
+      .card:hover .front{
+          transform: perspective(600px) rotateY(180deg);
+  
+           
+      }
+  
+      .card:hover .back{
+          transform: perspective(600px) rotateY(360deg);
+      }
+    footer{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    border-radius: 10px;
+        
+    }
+  
